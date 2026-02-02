@@ -9,6 +9,7 @@ import Products from "@/pages/Products";
 import ProductDetail from "@/pages/ProductDetail";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import QrRedirect from "@/pages/QrRedirect";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/products/:id" component={ProductDetail} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/qrRedirect" component={QrRedirect} />
       <Route component={NotFound} />
     </Switch>
   );
