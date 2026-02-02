@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "Single Blade Segments",
+    "description": "High-performance blade designed for fast and smooth cutting of granite, marble, and hard stones. Features a unique rim design for cooling and debris removal.",
+    "price": "Contact for Quote",
+    "category": "Cutting",
+    "features": ["Ultra-fast cutting", "Minimal chipping", "Wet or dry use", "Long lifespan"],
+    "images": [
+      "/productImages/singleBlade/blade.png",
+      "/productImages/singleBlade/blade3.jpg",
+      "/productImages/singleBlade/bladeCover.png"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Calibration Tools",
+    "description": "Industrial grade diamond core bit for reinforced concrete and masonry. engineered for maximum drilling speed and life.",
+    "price": "Contact for Quote",
+    "category": "Drilling",
+    "features": ["Laser welded segments", "High diamond concentration", "Standard thread fit"],
+    "images": [
+      "/productImages/calibrationTools/calib.jpg",
+      "/productImages/calibrationTools/calibration.png"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Circular Saw",
+    "description": "Heavy-duty grinding cup wheel for concrete surface preparation, coating removal, and leveling.",
+    "price": "Contact for Quote",
+    "category": "Grinding",
+    "features": ["Aggressive material removal", "Balanced for low vibration", "Double row segments"],
+    "images": [
+      "/productImages/circularSaw/circular-saw.png",
+      "/productImages/circularSaw/circular-saw-1.png"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wiresaw Pearl Chain",
+    "description": "Professional diamond wire for cutting large stone blocks, concrete structures, and thick metal.",
+    "price": "Contact for Quote",
+    "category": "Heavy Cutting",
+    "features": ["Rubberized assembly", "High tensile strength", "Various bead diameters available"],
+    "images": [
+      "/productImages/wiresawPearlChain/new.png",
+      "/productImages/wiresawPearlChain/pearl_zylrbwn.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Multi Blade Segments",
+    "description": "Complete set of wet/dry polishing pads for achieving a mirror finish on granite, marble, and engineered stone.",
+    "price": "Contact for Quote",
+    "category": "Polishing",
+    "features": ["Flexible design", "Color coded grits", "High gloss finish"],
+    "images": [
+      "/productImages/multiBlade/blade.png",
+      "/productImages/multiBlade/multi-blade-3.png",
+      "/productImages/multiBlade/multiCover.png"
+    ]
+  }
+]

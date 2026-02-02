@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&family=Bebas+Neue:wght@400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bernoru-regular');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Rajdhani', sans-serif;
+  --font-logo: 'Bernoru Regular', 'Bebas Neue', sans-serif;
+
+  /* Industrial Corporate Palette */
+  /* Background: clean white/light gray */
+  --background: 210 20% 98%;
+  --foreground: 222 47% 11%;
+
+  /* Primary: Deep Industrial Navy */
+  --primary: 222 47% 11%;
+  --primary-foreground: 210 40% 98%;
+
+  /* Accent: Diamond Ice Blue / Technical Blue */
+  --accent: 313 42.6% 29.6%;
+  --accent-foreground: 210 40% 98%;
+
+  /* Secondary: Metallic Silver/Gray */
+  --secondary: 210 20% 90%;
+  --secondary-foreground: 222 47% 11%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 222 47% 11%;
+  --radius: 0.25rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-accent/20 selection:text-primary;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight uppercase;
+  }
+
+  .font-logo {
+    font-family: var(--font-logo);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-secondary/30;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 hover:bg-primary/40 rounded-full transition-colors;
+}
+
+/* Hero Gradient Overlay */
+.hero-gradient {
+  background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.4) 100%);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70;
+}
