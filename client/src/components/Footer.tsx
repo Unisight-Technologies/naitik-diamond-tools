@@ -29,7 +29,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><Link href="/" className="hover:text-accent transition-colors">Home</Link></li>
               <li><Link href="/products" className="hover:text-accent transition-colors">Products</Link></li>
-              <li><Link href="/about" className="hover:text-accent transition-colors">Our Story</Link></li>
+              {/* <li><Link href="/about" className="hover:text-accent transition-colors">Our Story</Link></li> */}
               <li><Link href="/contact" className="hover:text-accent transition-colors">Contact Support</Link></li>
             </ul>
           </div>
@@ -40,16 +40,33 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-primary-foreground/70">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0" />
-                <span>NH-8, Bhagwanda Village, near Morchana <br />
-                  Kankroli, Rajsamand 313324 (Rajasthan)</span>
+                <a 
+                  href="https://maps.app.goo.gl/6tRtfM6513ojVib19"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  NH-8, Bhagwanda Village, near Morchana <br />
+                  Kankroli, Rajsamand 313324 (Rajasthan)
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
-                <span>+91 9414174580</span>
+                <a 
+                  href="tel:+919414174580" 
+                  className="hover:text-accent transition-colors"
+                >
+                  +91 9414174580
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
-                <span>naitikdiamondtools@yahoo.com</span>
+                <a 
+                  href="mailto:naitikdiamondtools@yahoo.com" 
+                  className="hover:text-accent transition-colors"
+                >
+                  naitikdiamondtools@yahoo.com
+                </a>
               </li>
             </ul>
           </div>

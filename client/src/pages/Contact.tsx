@@ -4,19 +4,19 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useSubmitContact, type ContactRequest } from "@/hooks/use-contact";
 import { z } from "zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+// import {
+//   Form,
+//   FormControl,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "@/components/ui/form";
+// import { Input } from "@/components/ui/input";
+// import { Textarea } from "@/components/ui/textarea";
+// import { Button } from "@/components/ui/button";
+// import { Checkbox } from "@/components/ui/checkbox";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 const contactSchema = z.object({
@@ -65,13 +65,13 @@ export default function Contact() {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-display font-bold mb-4">Contact Us</h1>
             <p className="text-primary-foreground/80">
-              Get in touch for quotes, technical support, or distribution inquiries.
+              Get in touch for quotes, distribution, or any other inquiries.
             </p>
           </div>
         </div>
 
         <div className="container mx-auto px-4 md:px-6 -mt-8 mb-20">
-          <div className="grid lg:grid-cols-3 gap-8 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+          <div className="grid lg:grid-cols-1 gap-8 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
             {/* Info Panel */}
             <div className="bg-slate-900 text-white p-10 lg:p-12 space-y-8">
               <div>
@@ -88,8 +88,30 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Phone</h4>
-                    <p className="text-slate-300">+91 9414174580</p>
+                    <a 
+                      href="tel:+919414174580" 
+                      className="text-slate-300 hover:text-accent transition-colors"
+                    >
+                      +91 9414174580
+                    </a>
                     {/* <p className="text-slate-400 text-sm mt-1">All Week 8am-8pm IST</p> */}
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/20 p-3 rounded-lg">
+                    <MessageCircle className="h-6 w-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg">WhatsApp</h4>
+                    <a 
+                      href="https://wa.me/919414174580" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-300 hover:text-accent transition-colors"
+                    >
+                      +91 9414174580
+                    </a>
                   </div>
                 </div>
 
@@ -99,7 +121,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Email</h4>
-                    <p className="text-slate-300">naitikdiamondtools@yahoo.com</p>
+                    <a 
+                      href="mailto:naitikdiamondtools@yahoo.com" 
+                      className="text-slate-300 hover:text-accent transition-colors"
+                    >
+                      naitikdiamondtools@yahoo.com
+                    </a>
                   </div>
                 </div>
 
@@ -109,10 +136,15 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Office</h4>
-                    <p className="text-slate-300">
+                    <a 
+                      href="https://maps.app.goo.gl/6tRtfM6513ojVib19"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-300 hover:text-accent transition-colors"
+                    >
                       NH-8, Bhagwanda Village, near Morchana <br />
                       Kankroli, Rajsamand 313324 (Rajasthan)
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -126,7 +158,7 @@ export default function Contact() {
             </div>
 
             {/* Form Panel */}
-            <div className="lg:col-span-2 p-10 lg:p-12">
+            {/* <div className="lg:col-span-2 p-10 lg:p-12">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -142,8 +174,8 @@ export default function Contact() {
                           <FormMessage />
                         </FormItem>
                       )}
-                    />
-                    <FormField
+                    /> */}
+                    {/* <FormField
                       control={form.control}
                       name="email"
                       render={({ field }) => (
@@ -202,10 +234,10 @@ export default function Contact() {
                         <FormMessage />
                       </FormItem>
                     )}
-                  />
+                  /> */}
 
                   {/* Mock Captcha */}
-                  <div className="bg-slate-50 border rounded-lg p-4 w-fit flex items-center gap-3">
+                  {/* <div className="bg-slate-50 border rounded-lg p-4 w-fit flex items-center gap-3">
                     <Checkbox 
                       id="captcha" 
                       checked={captchaVerified}
@@ -230,7 +262,7 @@ export default function Contact() {
                   </Button>
                 </form>
               </Form>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

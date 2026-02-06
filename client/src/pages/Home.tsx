@@ -89,7 +89,7 @@ export default function Home() {
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose Diamond Tools Inc?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose Us?</h2>
               <p className="text-muted-foreground text-lg">
                 We combine decades of engineering expertise with high-grade synthetic diamonds to create tools that outlast and outperform.
               </p>
@@ -131,9 +131,9 @@ export default function Home() {
         <section className="py-24 bg-primary text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10" />
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">READY TO UPGRADE YOUR WORKFLOW?</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Do we have a deal?</h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Get in touch with our technical sales team for custom solutions and bulk pricing.
+              If you are interested in any of our products or just feel like asking any query to us, feel free to contact us.
             </p>
             <Link href="/contact">
               <Button size="lg" className="bg-white text-primary hover:bg-slate-100 font-bold h-14 px-10 text-lg">
