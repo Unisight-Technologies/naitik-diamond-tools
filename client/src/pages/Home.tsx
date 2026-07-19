@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, ShieldCheck, Zap, PenTool } from "lucide-react";
+import { ArrowRight, ShieldCheck, Zap, PenTool, Factory, Globe, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import heroImage from "../../public/bg-hero.png";
 
@@ -98,6 +98,21 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
+                  icon: <Factory className="h-10 w-10 text-accent" />,
+                  title: "OEM Manufacturing",
+                  desc: "Custom diamond tool solutions with private labeling and tailored specifications."
+                },
+                {
+                  icon: <Globe className="h-10 w-10 text-accent" />,
+                  title: "Global Export Ready",
+                  desc: "Serving distributors and manufacturers with reliable worldwide supply."
+                },
+                {
+                  icon: <BadgeCheck className="h-10 w-10 text-accent" />,
+                  title: "Quality Assured",
+                  desc: "Precision manufacturing and rigorous quality control ensure consistent performance."
+                },
+                {
                   icon: <ShieldCheck className="h-10 w-10 text-accent" />,
                   title: "Premium Durability",
                   desc: "Engineered to withstand high heat and friction, prolonging tool life by up to 40%."
@@ -111,7 +126,7 @@ export default function Home() {
                   icon: <PenTool className="h-10 w-10 text-accent" />,
                   title: "Precision Finish",
                   desc: "Minimize chipping and cracking with our vibration-dampening core technology."
-                }
+                },
               ].map((feature, i) => (
                 <div key={i} className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-accent/30 hover:shadow-lg transition-all group">
                   <div className="mb-6 bg-white w-16 h-16 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">

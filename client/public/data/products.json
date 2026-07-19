@@ -60,5 +60,25 @@
       "/productImages/multiBlade/multi-blade-3.png",
       "/productImages/multiBlade/multiCover.png"
     ]
-  }
+  },
+  {
+    "id": 6,
+    "name": "Sintered Diamond Wire Saw Beads",
+    "description": "Premium hot-pressed sintered diamond wire saw beads engineered for efficient cutting of granite and marble with medium to high hardness. Designed for superior wear resistance, consistent performance, and extended service life.",
+    "price": "Contact for Quote",
+    "category": "Diamond Wire Tools",
+    "features": [
+      "Hot Pressed",
+      "11.5 mm Bead",
+      "Granite & Marble",
+      "Soft/Medium/Hard Bond",
+      "OEM Available",
+      "High Wear Resistance"
+    ],
+    "images": [
+      "/productImages/multiBlade/blade.png",
+      "/productImages/multiBlade/multi-blade-3.png",
+      "/productImages/multiBlade/multiCover.png"
+    ]
+}
 ]
